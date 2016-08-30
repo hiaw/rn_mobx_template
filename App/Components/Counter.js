@@ -15,6 +15,7 @@ class Counter extends React.Component {
           Welcome to React Native Reactive!
         </Text>
         <CounterRow {...this.props} />
+        <Button onPress={this.props.store.counter.decrease}>Add Row</Button>
       </View>
     )
   }
