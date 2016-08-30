@@ -4,8 +4,9 @@ import {
   Text
 } from 'react-native'
 import Button from 'react-native-button'
-import styles from './Styles/CounterRow.Style.js'
 import {observer} from 'mobx-react/native'
+
+import styles from './Styles/CounterRow.Style.js'
 
 @observer
 class CounterRow extends React.Component {
