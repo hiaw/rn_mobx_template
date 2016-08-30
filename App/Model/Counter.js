@@ -3,19 +3,19 @@ import autobind from 'autobind-decorator'
 
 @autobind
 class CounterStore {
-  @observable counter = 0;
+  @observable count = 0;
   total = 0;
 
   constructor(){
-    reaction(()=>this.counter, ()=>this.total++);
+    reaction(()=>this.count, ()=>this.total++);
   }
 
   increase(){
-    this.counter++;
+    this.count++;
   }
 
   decrease(){
-    this.counter--;
+    this.count--;
   }
 }
 

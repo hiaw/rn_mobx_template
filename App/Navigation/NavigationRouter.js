@@ -3,7 +3,7 @@ import {Router, Scene} from 'react-native-mobx'
 
 // view and model for Counter scene
 import Counter from '../Components/Counter.js'
-import store from '../Model/Counter.js'
+import store from '../Model/MainStore.js'
 
 class NavigationRouter extends React.Component {
   render () {

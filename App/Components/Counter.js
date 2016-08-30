@@ -10,16 +10,16 @@ import styles from './Styles/Counter.Style.js'
 
 class Counter extends React.Component {
   render () {
-    let store = this.props.store
+    let counter = this.props.store.counter
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native Reactive!
         </Text>
-        <Text>Counter: {store.counter}</Text>
-        <Text>Total clicks: {store.total}</Text>
-        <Button onPress={store.increase}>+</Button>
-        <Button onPress={store.decrease}>-</Button>
+        <Text>Counter: {counter.count}</Text>
+        <Text>Total clicks: {counter.total}</Text>
+        <Button onPress={counter.increase}>+</Button>
+        <Button onPress={counter.decrease}>-</Button>
       </View>
     )
   }
