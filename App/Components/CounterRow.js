@@ -10,7 +10,7 @@ import {observer} from 'mobx-react/native'
 @observer
 class CounterRow extends React.Component {
   render () {
-    let counter = this.props.store.counter
+    let counter = this.props.counter
     return (
       <View style={styles.container}>
         <Text>Counter: {counter.count}</Text>
