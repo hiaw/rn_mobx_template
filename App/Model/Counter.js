@@ -5,6 +5,7 @@ import autobind from 'autobind-decorator'
 class CounterStore {
   @observable count = 0;
   total = 0;
+  id = Math.random()
 
   constructor(){
     reaction(()=>this.count, ()=>this.total++);
@@ -19,4 +20,4 @@ class CounterStore {
   }
 }
 
-export default new CounterStore();
+export default CounterStore;
