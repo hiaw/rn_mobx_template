@@ -21,9 +21,12 @@ class Counter extends React.Component {
         <Text style={styles.welcome}>
           Array example
         </Text>
-        {counterArray.counterArray.map((counter) => {
+        {counterArray.counterArray.map((counter, i) => {
           return (
+            <View>
              <CounterRow key={counter.id} counter={counter} />
+             <Button onPress={() => counterArray.deleteCounter(i)}>Delete Row</Button>
+            </View>
            )
         }) }
         <Button onPress={counterArray.addCounter}>Add Row</Button>
