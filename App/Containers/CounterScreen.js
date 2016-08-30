@@ -4,9 +4,12 @@ import {
   Text
 } from 'react-native'
 import Button from 'react-native-button'
+import {observer} from 'mobx-react/native'
+
 import CounterRow from '../Components/CounterRow.js'
 import styles from './Styles/CounterScreen.Style.js'
 
+@observer
 class Counter extends React.Component {
   render () {
     let counterArray = this.props.store.counterArray
