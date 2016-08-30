@@ -4,8 +4,8 @@ import {
   Text
 } from 'react-native'
 import Button from 'react-native-button'
-import CounterRow from './CounterRow.js'
-import styles from './Styles/Counter.Style.js'
+import CounterRow from '../Components/CounterRow.js'
+import styles from './Styles/CounterScreen.Style.js'
 
 class Counter extends React.Component {
   render () {
@@ -24,8 +24,8 @@ class Counter extends React.Component {
         {counterArray.counterArray.map((counter, i) => {
           return (
             <View key={counter.id} style={styles.row}>
-             <CounterRow key={counter.id} counter={counter} />
-             <Button onPress={() => counterArray.deleteCounter(i)}>    Delete Row</Button>
+              <CounterRow key={counter.id} counter={counter} />
+              <Button onPress={() => counterArray.deleteCounter(i)}>    Delete Row</Button>
             </View>
            )
         }) }
