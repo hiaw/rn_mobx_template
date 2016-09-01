@@ -12,21 +12,16 @@ export default class DrawerContent extends Component {
     this.context.drawer.toggle()
   }
 
-  handleAllItems () {
+  handleMain () {
     this.toggleDrawer()
-    NavigationActions.wordList()
-  }
-
-  handleFirstView () {
-    this.toggleDrawer()
-    NavigationActions.wordList()
+    NavigationActions.main()
   }
 
   render () {
     return (
       <ScrollView>
-        <DrawerButton text='Home' onPress={this.handleAllItems} />
-        <DrawerButton text='Another View' onPress={this.handleFirstView} />
+        <DrawerButton text='Home' onPress={this.handleMain} />
+        <DrawerButton text='Another View' onPress={this.handleMain} />
       </ScrollView>
     )
   }

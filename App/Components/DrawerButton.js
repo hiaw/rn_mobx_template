@@ -1,12 +1,11 @@
 import React, { Component, PropTypes } from 'react'
 import { Text, TouchableOpacity } from 'react-native'
-import styles from './Styles/Drawer.Style.js'
 
 class DrawerButton extends Component {
   render () {
     return (
       <TouchableOpacity onPress={this.props.onPress}>
-        <Text style={styles.text}>{this.props.text}</Text>
+        <Text>{this.props.text}</Text>
       </TouchableOpacity>
     )
   }
