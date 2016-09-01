@@ -1,4 +1,5 @@
 import React from 'react'
+
 import NavigationRouter from './Navigation/NavigationRouter.js'
 
 class Root extends React.Component {

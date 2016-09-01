@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {
   View,
@@ -7,10 +8,10 @@ import Button from 'react-native-button'
 import {observer} from 'mobx-react/native'
 
 import CounterRow from '../Components/CounterRow.js'
-import styles from './Styles/CounterScreen.Style.js'
+import styles from './Styles/MainScreen.Style.js'
 
 @observer
-class Counter extends React.Component {
+class MainScreen extends React.Component {
   render () {
     let counterArray = this.props.store.counterArray
     let counterO = this.props.store.counter
@@ -38,4 +39,4 @@ class Counter extends React.Component {
   }
 }
 
-export default Counter
+export default MainScreen
