@@ -11,9 +11,17 @@ const openDrawer = () => {
 
 export default {
   backButton () {
-    return <Icon.Button name='bars' color='#3b5998' onPress={NavigationActions.pop} />
+    return <Icon.Button
+      color='black'
+      backgroundColor='transparent'
+      name='angle-left'
+      onPress={NavigationActions.pop} />
   },
   hamburgerButton () {
-    return <Icon.Button name='bars' color='#3b5998' onPress={openDrawer} />
+    return <Icon.Button
+      color='black'
+      backgroundColor='transparent'
+      name='bars'
+      onPress={openDrawer} />
   }
 }
