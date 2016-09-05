@@ -1,5 +1,7 @@
 # rn_mobx_template
 
+![Gif](./image.gif "Screencast")
+
 Template for using MobX in React Native with sample code
 
 1. Create model in `App/Model`
